@@ -1,19 +1,31 @@
 # LinkageMapView
 Plot Linkage Group Maps with QTLs
 
-## To install LinkageMapView from Github in R:
+## Install LinkageMapView by downloading the latest CRAN release:
 ```R
-install.packages("devtools")
-devtools:: install_github("louellette/LinkageMapView")
+install.packages("LinkageMapView")
+library("LinkageMapView")
 ```
 
-Once installed:
+## If you wish to install the latest developmental release
+### First install the devtools package.
+```R
+install.packages("devtools")
+library(devtools)
+```
+
+### Then to install LinkageMapView:
+```R
+devtools:: install_github("louellette/LinkageMapView",build_vignettes=TRUE)
+```
+
+### Once installed:
 ```R
 library(LinkageMapView)
 ```
 
 ## To see examples and parameter descriptions:
 ```R
-?lmv
+?lmv.linkage.plot
 ```
 Feel free to add Issues for problems or questions.
